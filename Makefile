@@ -43,12 +43,12 @@ check: sdist wheel
 
 .PHONY: lint
 lint:
-	pytest --pep8 --pylint -m 'pep8 or pylint'
+	pytest --flake8 --pylint -m 'flake8 or pylint'
 
 
-.PHONY: pep8
-pep8:
-	pytest --pep8 -m pep8
+.PHONY: flake8
+flake8:
+	pytest --flake8 -m flake8
 
 
 .PHONY: pylint
@@ -67,7 +67,7 @@ pytest:
 
 .PHONY: review
 review:
-	pytest --pep8 --pylint
+	pytest --flake8 --pylint
 
 
 .PHONY: clean
