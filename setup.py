@@ -38,7 +38,7 @@ REQUIREMENTS_PACKAGE = [
 
 REQUIREMENTS_TEST = [
     'pytest',
-    'pytest-pep8',
+    'pytest-flake8',
     'pytest-pylint',
     'WebTest',
 ]
